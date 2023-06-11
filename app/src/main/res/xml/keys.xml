@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- add line below to your local.properties file under Gradle Scripts   -->
+    <!-- MAPS_API_KEY=AIzaSyA4U_EoGMD8nsry6J5OXTV_YHcUisFsuJQ -->
+</PreferenceScreen>

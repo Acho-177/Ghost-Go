@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/password"
+        android:layout_marginTop="30dp"
+        android:text="@string/name" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editPassword"
+        android:layout_alignBottom="@id/name"
+        android:layout_marginBottom="-10dp"
+        android:layout_toEndOf="@id/name"
+        android:ems="5"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/Password" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/password"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="-10dp"
+        android:layout_toEndOf="@id/password"
+        android:ems="5"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/passwordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignRight="@id/password"
+        android:layout_marginTop="20dp"
+        android:text="@string/confirmation" />
+
+    <EditText
+        android:id="@+id/editconfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/passwordConfirm"
+        android:layout_marginBottom="-5dp"
+        android:layout_toEndOf="@id/passwordConfirm"
+        android:ems="5"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/complexity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/editPassword"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:layout_toEndOf="@id/editPassword"
+        android:text="@string/complexity_low" />
+
+</RelativeLayout>

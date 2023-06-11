@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textLabelProvider"
+        android:text="Dummy"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLabelProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/textLabelLongitude"
+        android:text="Provider: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLatitude"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textProvider"
+        android:layout_toEndOf="@id/textLabelLatitude"
+        android:text="Dummy"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLabelLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLabelProvider"
+        android:layout_alignEnd="@id/textLabelLongitude"
+        android:text="Latitude: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLongitude"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLabelLatitude"
+        android:layout_toEndOf="@id/textLabelLongitude"
+        android:width="200dp"
+        android:text="Dummy"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLabelLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLabelLatitude"
+        android:layout_marginTop="-1dp"
+        android:text="Longitude: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textTo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLabelLongitude"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/textLabelLongitude"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="Dummy" />
+
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTo"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/textLabelLongitude"
+        android:gravity="center_horizontal"
+        android:text="Dummy"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textNewLocLabel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDistance"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/textLabelLongitude"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="New Location"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNewLocLabel"
+        android:layout_marginTop="-2dp"
+        android:hint=""
+        android:inputType="textPostalAddress"
+        android:minWidth="100dp"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonNewLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLocation"
+        android:layout_alignEnd="@id/editLocation"
+        android:onClick="onNew"
+        android:text="New" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNewLocLabel"
+        android:layout_toEndOf="@id/editLocation">
+
+        <RadioButton
+            android:id="@+id/radioButtonDrive"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onDriveMode"
+            android:text="Drive" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBike"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="onBikeMode"
+            android:text="Bike" />
+
+        <RadioButton
+            android:id="@+id/radioButtonWalk"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="onWalkMode"
+            android:text="Walk" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonOpenMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonNewLoc"
+        android:layout_alignEnd="@id/buttonNewLoc"
+        android:onClick="onOpenMap"
+        android:text="OpenMap" />
+
+</RelativeLayout>

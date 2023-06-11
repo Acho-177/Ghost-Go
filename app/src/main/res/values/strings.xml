@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">GO Ghost!</string>
+    <string name="start_button">START</string>
+    <string name="start_text">Are You Ready to Start Your Hunting?</string>
+    <string name="fun_image_description">This\'s an image on main activity, just fo fun</string>
+
+    <string name="eb2250">2250 Engineering</string>
+    <string name="sparty">Sparty</string>
+    <string name="home">Home</string>
+    <string name="universityedge">Univeristy Edge</string>
+    <string name="exception">Failed to communicate with geolocation services</string>
+    <string name="couldnotfind">Unable to locate address</string>
+
+    <string name="login">Log in</string>
+    <string name="Password">password</string>
+    <string name="Remember">remember me</string>
+    <string name="name">name</string>
+    <string name="login_fail">login fail</string>
+    <string name="login_success">login success</string>
+    <string name="signup">Sign up</string>
+    <string name="confirmation">confirm</string>
+    <string name="complexity_low">complexity: low</string>
+    <string name="complexity_high">complexity: high</string>
+    <string name="complexity_mid">complexity: mid</string>
+    <string name="sign_success">sign success</string>
+    <string name="sign_fail">sign fail</string>
+    <string name="captured">successfully captured</string>
+    <string name="captureMessage1">You have encountered a ghost!</string>
+    <string name="captureMessage2">Do you want to capture it?</string>
+
+</resources>
